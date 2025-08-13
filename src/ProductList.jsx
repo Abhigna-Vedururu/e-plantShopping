@@ -232,7 +232,7 @@ function ProductList(props) {
         }
     ];
    const styleObj={
-    backgroundColor: '#615EFC',
+    backgroundColor: '#622237',
     color: '#fff!important',
     padding: '15px',
     display: 'flex',
@@ -270,16 +270,13 @@ const handlePlantsClick = (e) => {
         <div>
              <div className="navbar" style={styleObj}>
             <div className="tag">
-               <div style={{cursor:"pointer"}} onClick={props.toLanding} className="luxury">
-               <img src="https://cdn.pixabay.com/photo/2020/08/05/13/12/eco-5465432_1280.png" alt="" />
-               <a   style={{textDecoration:'none'}}>
-                        <div>
-                    <h3 style={{color:'white'}}>Lili's Plants</h3>
-                    <i style={{color:'white'}}>Where Green Meets Serenity</i>
-                    </div>
-                    </a>
+               <div style={{cursor: "pointer"}} onClick={props.onHomeClick} className="luxury">
+                <img src="https://cdn.pixabay.com/photo/2016/10/27/22/53/valentines-day-background-1776746_1280.jpg" alt="Lili's Plants Logo" />
+                <div>
+                    <h3 style={{color: 'white'}}>Lili's Plants</h3>
+                    <i style={{color: 'white'}}>Where Green Meets Serenity</i>
                 </div>
-              
+                </div> 
             </div>
             <div style={styleObjUl}>
                 
@@ -298,7 +295,7 @@ const handlePlantsClick = (e) => {
                     <h2>{plant.name}</h2>
                     <p>{plant.description}</p>
                     <p>{plant.cost}</p>
-                    <button style={{backgroundColor:alreadyInCart(plant.name)?"gray":"#615EFC"}} disabled={alreadyInCart(plant.name)? true:false} onClick={()=>handleAddToCart({name:plant.name,cost:plant.cost,image:plant.image})} className='product-button'>Add to Cart</button>
+                    <button style={{backgroundColor:alreadyInCart(plant.name)?"gray":"#622237"}} disabled={alreadyInCart(plant.name)? true:false} onClick={()=>handleAddToCart({name:plant.name,cost:plant.cost,image:plant.image})} className='product-button'>Add to Cart</button>
                 </div>)}
                  </div>
             </div>)}
