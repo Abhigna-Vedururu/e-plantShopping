@@ -1,4 +1,4 @@
-#🌿 Lili's Plants – E-Plant Shopping App
+# 🌿 Lili's Plants – E-Plant Shopping App
 Welcome to Lili's Plants, an e-commerce web application for buying a variety of indoor and outdoor plants 🌱. This project allows users to browse categorized plants, add them to a cart, and explore more about the shop and its purpose.
 ________________________________________
 ## 🚀 Features
